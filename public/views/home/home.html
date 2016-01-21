@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Connect to source:</h1>
+      <div class="col-md-1 text-center">
+      	<a ng-if="!loading" ng-click="connect();" href="/oauth/connect">
+					<img ng-src="/img/instagram.png" alt="">
+	      </a>
+	      <span ng-if="loading">
+	       	<img ng-src="/img/ajax-loader.gif" alt=""><br />
+	       	fetching images...
+	      </span>
+      </div>
+      <div class="col-md-1 text-center">
+      	<img ng-src="/img/facebook_icon.png" alt="" style="opacity: .3;">
+	    </div>
+      
+    </div>
+  </div>
+</div>
