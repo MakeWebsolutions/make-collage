@@ -1,10 +1,10 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <h1>Connect to source:</h1>
       <div class="col-md-1 text-center">
       	<a ng-if="!loading" ng-click="connect();" href="/oauth/connect">
 					<img ng-src="/img/instagram.png" alt="">
+          <span class="text-center">Instagram</span>
 	      </a>
 	      <span ng-if="loading">
 	       	<img ng-src="/img/ajax-loader.gif" alt=""><br />
@@ -13,6 +13,7 @@
       </div>
       <div class="col-md-1 text-center">
       	<img ng-src="/img/facebook_icon.png" alt="" style="opacity: .3;">
+        <span class="text-center">Facebook</span>
 	    </div>
       
     </div>
