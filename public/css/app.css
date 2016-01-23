@@ -1,5 +1,5 @@
 body {
-  background-color: #ECF0F1;
+  background-color: #f4f4f4;
   margin-top: 60px;
 }
 
@@ -8,6 +8,8 @@ h1 { margin-bottom: 25px; }
 a, a:hover, a:focus, a:active {
 	text-decoration: none;
 }
+
+.container { margin-left: 0;}
 
 img { max-width: 100%;vertical-align:top;max-height:100%;}
 .image { padding: 0; }
@@ -28,8 +30,8 @@ input[type="radio"]:hover { cursor:pointer; }
 }
 
 .placeholder { width: 203.33px;height:203.33px;visibility: visible;background: #ccc;float:left;box-sizing:border-box;}
-.apps-container { border: none;width:610px;height:auto;min-height: 203px;margin: 0 auto;float:left;background-color: #e0e3e4;}	
-.apps-pool { position:fixed;top:0;right: 0;width: 213px;padding: 5px;height:100%;z-index: 1000;overflow-y:auto;white-space: wrap;box-sizing:border-box;background-color: #e0e3e4;}
+.apps-container { border: none;width:610px;height:auto;min-height: 203px;margin: 0 auto;float:left;background-color: #f4f4f4;}	
+.apps-pool { border-left: 1px solid #F26530;position:fixed;top:0;right: 0;width: 213px;padding: 5px;height:100%;z-index: 1000;overflow:auto;white-space: wrap;box-sizing:border-box;background-color: #fff;}
 .apps-pool img { margin:0;padding:0;margin-bottom:5px;cursor:move; }
 
 
