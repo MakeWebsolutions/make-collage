@@ -66,7 +66,7 @@ angular.module('make-collage')
   			}
   		}).success(function(res) {
         $scope.url = res.url;
-        $butt.text('Generate');
+        $butt.text('Make collage');
       })
   	}
 

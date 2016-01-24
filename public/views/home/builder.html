@@ -14,10 +14,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4" style="margin-top:20px;">
-				<!--<input colorpicker class="form-control" type="text" ng-model="backgroundColor" />//-->
-			</div>
-			<div class="col-md-8" style="padding-right: 10px;">
+			<div class="col-md-12">
 				<button id="butt" ng-disabled="+images[1].length === 0" style="margin-top:20px;" class="btn btn-success btn-lg pull-right" ng-click="generate();">Make collage</button>
 			</div>
 		</div>
@@ -31,8 +28,29 @@
 	</div>
 	  
 	<div class="wrapper" ng-if="url">
-		<div class="alert alert-info">
-			<p>Url: {{ url }}</p>
+		<div class="alert alert-success clearfix">
+			<div class="col-md-9">
+				<input class="form-control url" type="text" id="url" value="{{ url }}"></span>
+			</div>
+			<div class="col-md-3">
+				<button class="btn btn-default btn-block pull-right" copy-to-clipboard="url">Copy</button>
+			</div>
 		</div>
 	</div>
 </div>
+
+<style>
+.url { border: 1px solid transparent;background: transparent;box-shadow: none; }
+
+@media all and (max-width: 1200px and min-width: 1000px) {
+	.container { max-width: 1000px;margin: 0;}
+} 
+
+@media all and (max-width: 1100px) {
+	.container { max-width: 900px;margin: 0;}
+} 
+
+@media all and (max-width: 1000px) {
+	.container { max-width: 750px;margin: 0;}
+} 
+</style>

@@ -17,8 +17,8 @@ include Magick
 class Makecollage < Sinatra::Application
   enable :sessions
 
-  #CALLBACK_URL = "http://localhost:9292/oauth/callback"
-  CALLBACK_URL = "https://make-collage.herokuapp.com/oauth/callback"
+  CALLBACK_URL = "http://localhost:9292/oauth/callback"
+  #CALLBACK_URL = "https://make-collage.herokuapp.com/oauth/callback"
 
   Instagram.configure do |config|
     config.client_id = "4d59549610314d6a9af28bb982ce6cab"
