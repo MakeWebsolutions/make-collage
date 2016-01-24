@@ -1,6 +1,6 @@
 <div ng-if="error">
 	<div class="alert alert-danger">
-		{{ error }}&nbsp;&nbsp;<button class="btn btn-default" ng-href="/">Authorize</button>
+		{{ error }}&nbsp;&nbsp;<button class="btn btn-default" href="/">Authorize</button>
 	</div>
 </div>
 
@@ -43,6 +43,7 @@
 
 <style>
 .url { border: 1px solid transparent;background: transparent;box-shadow: none; }
+.form-control:focus { outline: 0;border: none;box-shadow: none; }
 
 @media all and (max-width: 1200px and min-width: 1000px) {
 	.container { max-width: 1000px;margin: 0;}
