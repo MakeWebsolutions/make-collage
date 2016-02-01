@@ -6,6 +6,6 @@ angular.module('make-collage')
 
   	$scope.connect = function() {
   		$scope.loading = true;
-  		console.log("o")
   	}
+  	
   }]);
