@@ -42,8 +42,8 @@ class Makecollage < Sinatra::Application
   CALLBACK_URL = "https://make-collage.herokuapp.com/oauth/callback"
 
   Instagram.configure do |config|
-    config.client_id = "4d59549610314d6a9af28bb982ce6cab"
-    config.client_secret = "2a8d31557de14184b469985e22c0d01e"
+    config.client_id = ENV['INSTAGRAM_CLIENT_ID']
+    config.client_secret = ENV['INSTAGRAM_CLIENT_SECRET']
     # For secured endpoints only
     #config.client_ips = '<Comma separated list of IPs>'
   end
