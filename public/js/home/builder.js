@@ -65,8 +65,10 @@ angular.module('make-collage')
   				action: 'generate'
   			}
   		}).success(function(res) {
-        $scope.url = res.url;
-        $butt.text('Make collage');
+        if(res.status === 'success') {
+          $scope.msg = 'Your image is generated and uploaded to Make Newsmail!';
+          $butt.text('Make collage');
+        }
       })
   	}
 

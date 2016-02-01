@@ -2,8 +2,8 @@
   <div class="row">
     <div class="col-md-12">
       <div class="col-sm-1 text-center">
-      	<a ng-if="!loading" ng-click="connect();" href="/oauth/connect">
-					<img ng-src="/img/instagram.png" alt=""><br>
+      	<a ng-if="!loading" ng-click="connect();" ng-href="/oauth/connect?e={{ user }}">
+					<img ng-src="/img/instagram.png" alt=""><br> 
           <span class="text-center">Instagram</span>
 	      </a>
 	      <span ng-if="loading">
@@ -11,11 +11,12 @@
 	       	fetching images...
 	      </span>
       </div>
-      <div class="col-sm-1 text-center" style="opacity: .3;">
-      	<img height="51" ng-src="/img/facebook_icon.png" alt=""><br>
-        <span class="text-center">Coming</span>
+      <div class="col-sm-1 text-center">
+      	<a ng-href="/oauth/connect">
+          <img height="51" ng-src="/img/facebook_icon.png" alt=""><br>
+          <span class="text-center">Facebook</span>
+        </a>
 	    </div>
-      
     </div>
   </div>
 

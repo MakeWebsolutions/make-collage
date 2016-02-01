@@ -29,14 +29,9 @@
 		</span>
 	</div>
 	  
-	<div class="wrapper" ng-if="url">
-		<div class="alert alert-success clearfix">
-			<div class="col-md-9">
-				<input class="form-control url" type="text" id="url" value="{{ url }}"></span>
-			</div>
-			<div class="col-md-3">
-				<button class="btn btn-default btn-block pull-right" copy-to-clipboard="url">Copy</button>
-			</div>
+	<div class="wrapper" ng-if="msg">
+		<div class="alert alert-success">
+			<span>{{ msg }}</span>
 		</div>
 	</div>
 </div>

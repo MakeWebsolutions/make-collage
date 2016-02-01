@@ -15,5 +15,11 @@ gem 'instagram'
 gem 'sinatra-cross_origin'
 gem 'rmagick'
 gem 'aws-sdk-v1'
+gem 'koala'
+gem 'httmultiparty'
+gem 'aes'
+
+
+
 
 

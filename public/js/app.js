@@ -1,6 +1,7 @@
 // Declare app level module which depends on filters, and services
 angular.module('make-collage', ['ngResource', 'ngRoute', 'ui.bootstrap', 'ui.date', 'ui.sortable', 'colorpicker.module'])
-  .config(['$routeProvider', function ($routeProvider) {
+  .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+    
     $routeProvider
       .when('/', {
         templateUrl: 'views/home/home.html', 

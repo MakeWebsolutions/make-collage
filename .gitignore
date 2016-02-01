@@ -3,4 +3,7 @@
 *~
 node_modules
 /env.rb
+public/tmp/*.jpg
+public/lib/npm-debug.log
+npm-debug.log
 

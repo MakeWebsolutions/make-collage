@@ -36,5 +36,9 @@
   },
   "engines": {
     "node": ">=0.8.15"
+  },
+  "scripts": {
+    "prebuild:css": "public/css/app.css >> public/css/app.min.css",
+    "env": "env"
   }
 }
